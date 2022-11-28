@@ -33,7 +33,7 @@ class AuthController extends Controller
                 'status' => 400,
                 'message' => 'Error in login user',
                 'body' => NULL
-            ], 400);
+            ], 200);
         }
 
         return response()->json([
