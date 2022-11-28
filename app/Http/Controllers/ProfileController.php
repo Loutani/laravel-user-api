@@ -24,8 +24,8 @@ class ProfileController extends Controller
             'message' => 'Successfully got user profile data',
             'body' => [
                 'email' => $user->email,
-                'firstname' => $profile->firstName,
-                'lastname' => $profile->lastName,
+                'firstName' => $profile->firstName,
+                'lastName' => $profile->lastName,
                 'id' => $user->id
             ]
         ], 200);
