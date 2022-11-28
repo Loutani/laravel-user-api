@@ -16,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::prefix('v1')->group(function() {
-    Route::post('/login', [AuthController::class, 'login']);
+    Route::post('/user/login', [AuthController::class, 'login']);
 });
 
 Route::middleware('auth:api')->prefix('v1')->group(function() {
-    Route::post('/profile', [ProfileController::class, 'read']);
+    Route::post('/user/profile', [ProfileController::class, 'read']);
+
+    Route::put('/user/profile', [ProfileController::class, 'update']);
 });
