@@ -40,7 +40,7 @@ class AuthController extends Controller
                 'status'    => 200,
                 'message'   => 'User successfully logged in',
                 'body'      => [
-                    'toekn' => $token
+                    'token' => $token
                 ]
             ]);
     }
